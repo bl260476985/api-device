@@ -47,7 +47,6 @@ class DeviceThirdController extends BaseApiController
             return $this->fail('此设备不存在');
         }
         $detail = [
-            'warning_id' => parent::getUid(),
             'device' => $device,
             'content' => $data
         ];
